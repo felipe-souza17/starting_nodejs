@@ -1,0 +1,26 @@
+POST http://localhost:8080/products
+Content-Type: application/json
+
+{
+  "name": "Caneta preta",
+  "price": 3.50
+}
+
+###
+GET http://localhost:8080
+Content-Type: application/json
+
+###
+GET http://localhost:8080/products/f6d62975-2a0d-4b02-859e-b4ecdab0730d
+
+###
+PUT http://localhost:8080/products/46d35f33-a14f-4cd2-ba5c-30a20556d030
+Content-Type: application/json
+
+{
+  "name": "Caneta Preta",
+  "price": 4.25
+}
+
+###
+DELETE http://localhost:8080/products/a7b2c2e4-8374-46b4-9ec3-e02140da7189

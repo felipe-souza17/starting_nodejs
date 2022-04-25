@@ -1,0 +1,15 @@
+{
+  "name": "starting_nodejs",
+  "version": "1.0.0",
+  "description": "Iniciando com NodeJS em 2022",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "author": "Felipe Roque de Souza",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15"
+  }
+}
