@@ -1,12 +1,1 @@
-[
-  {
-    "name": "Caneta Preta",
-    "price": 4.25,
-    "id": "64bf7f96-825c-487a-a722-a083c4d83aa7"
-  },
-  {
-    "name": "Caderno Star Wars",
-    "price": 34.99,
-    "id": "d89dba74-e328-494a-935b-3bf6d2137429"
-  }
-]
+[{"name":"Caneta Preta","price":4.25,"id":"64bf7f96-825c-487a-a722-a083c4d83aa7"},{"name":"Caderno Star Wars","price":34.99,"id":"d89dba74-e328-494a-935b-3bf6d2137429"},{"name":"Caderno Avengers","price":34.99,"id":"aadfcf45-1b84-4d9b-9379-658ffdb7be1c"},{"name":"Caderno Liga da Justiça","price":34.99,"id":"15429cd0-8401-4a89-9837-8ff782311a33"},{"name":"Caderno Liga da Justiça","price":34.99,"id":"27bfde69-3b42-42a8-ae87-9875cd420187"},{"name":"Intel Core i7 - 10400k","price":2599.99,"id":"4fb2be9e-5828-4fc6-900a-e4b0be32b911"}]

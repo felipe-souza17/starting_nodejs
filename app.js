@@ -1,5 +1,7 @@
 const express = require('express')
 const { randomUUID } = require('crypto')
+const PDFGenerator = require('pdfkit')
+const productListGenerator = require('./pdfGenerator')
 const fs = require('fs')
 
 const app = express()
@@ -41,6 +43,8 @@ app.post('/products', (request, response) => {
 
   productFile()
 
+  jsonToObjectAndConvertPdf()
+
   return response.json(product)
 })
 
@@ -65,6 +69,8 @@ app.put('/products/:id', (request, response) => {
 
   productFile()
 
+  jsonToObjectAndConvertPdf()
+
   return response.json({ message: 'Produto alterado com sucesso' })
 })
 
@@ -77,6 +83,8 @@ app.delete('/products/:id', (request, response) => {
 
   productFile()
 
+  jsonToObjectAndConvertPdf()
+
   return response.json({ message: 'Produto removido com sucesso!' })
 })
 
@@ -86,4 +94,14 @@ function productFile() {
     console.log('Produto inserido')
   })
 }
+
+function jsonToObjectAndConvertPdf() {
+  fs.readFile('./products.json', (err, data) => {
+    if (err) throw err
+    let productObject = JSON.parse(data)
+    const pg = new productListGenerator(productObject)
+    pg.generate()
+  })
+}
+
 app.listen(8080, () => console.log('Server rodando!'))

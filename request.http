@@ -2,19 +2,20 @@ POST http://localhost:8080/products
 Content-Type: application/json
 
 {
-  "name": "Caneta preta",
-  "price": 3.50
+  "name": "Intel Core i7 - 10400k",
+  "price": 2599.99
 }
 
+
 ###
-GET http://localhost:8080
+GET http://localhost:8080/products
 Content-Type: application/json
 
 ###
 GET http://localhost:8080/products/f6d62975-2a0d-4b02-859e-b4ecdab0730d
 
 ###
-PUT http://localhost:8080/products/46d35f33-a14f-4cd2-ba5c-30a20556d030
+PUT http://localhost:8080/products/64bf7f96-825c-487a-a722-a083c4d83aa7
 Content-Type: application/json
 
 {
@@ -23,4 +24,4 @@ Content-Type: application/json
 }
 
 ###
-DELETE http://localhost:8080/products/a7b2c2e4-8374-46b4-9ec3-e02140da7189
+DELETE http://localhost:8080/products/793cf105-4783-4931-ba55-c741784e7dce
